@@ -1,18 +1,20 @@
 # UF01. Fonaments de Programació
 
 ::: tip Informació del curs
-**Professor:**s Gu lermo Garrido Portes  
-* / David TurCSanmateu
+**Professors:** Guillermo Garrido Portes / David Tur Sanmateu
 
-rAcadèmic:** 2024-2025  
-**Cer
-e:** CEEDCV - Centre Específic d'Educació a Distància de la Comunitat Valenciana
+**Curs Acadèmic:** 2024-2025
+
+**Centre:** CEEDCV - Centre Específic d'Educació a Distància de la Comunitat Valenciana
 :::
 
 ::: info Entitat Educativa
-![Logo GVA](./docs/.vitepress/public/img/logo-gva-negro.svg){logo-anim}
-![Logo CC](./docs/.vitepress/blic/mg/logo-cc.png){.logo-anim}
-![Logo Centro](./docs/.vitepress/blic/g/logo-centro.png){.logo-anim}ip Benvinguts al Curs
+![Logo GVA](docs/.vitepress/public/img/logo-gva-negro.svg){.logo-anim}
+![Logo CC](docs/.vitepress/public/img/logo-cc.png){.logo-anim}
+![Logo Centro](docs/.vitepress/public/img/logo-centro.png){.logo-anim}
+:::
+
+::: tip Benvinguts al Curs
 Aquest curs està dissenyat per introduir-vos als fonaments essencials de la programació. Aprendreu els conceptes bàsics, les metodologies i les eines necessàries per començar la vostra trajectòria en el món del desenvolupament de programari.
 :::
 
