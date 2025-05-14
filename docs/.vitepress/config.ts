@@ -45,6 +45,13 @@ export default defineConfig({
     footer: {
       message: "CEEDCV - Centre Específic d'Educació a Distància de la Comunitat Valenciana",
       copyright: 'Copyright © 2024-2025'
+    },
+    outline: {
+      label: 'En aquesta pàgina'
+    },
+    docFooter: {
+      prev: 'Anterior',
+      next: 'Següent'
     }
   }
 })

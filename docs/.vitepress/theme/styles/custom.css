@@ -157,7 +157,6 @@
 }
 
 .vp-doc ul li::before {
-  content: '→';
   position: absolute;
   left: 0;
   color: var(--vp-c-brand);
@@ -277,4 +276,20 @@
 /* Scroll suave */
 html {
   scroll-behavior: smooth;
+}
+
+.header-anchor {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .vp-doc blockquote {
+    color: var(--vp-c-text-1);
+  }
+  .VPFlyout.active a:hover {
+    color: var(--vp-c-brand-light) !important;
+  }
+  .active, .VPFlyout.active .text[data-v-7a0eaf2e], .VPSidebarItem.level-1.has-active > .item > .link > .text[data-v-3d5a5d96], .title[data-v-77f00a4c]{
+    color: var(--vp-c-brand-light) !important;
+  }
 }
