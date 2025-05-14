@@ -6,15 +6,13 @@
 **Curs Acadèmic:** 2024-2025
 
 **Centre:** CEEDCV - Centre Específic d'Educació a Distància de la Comunitat Valenciana
+
+![Logo CC](/img/logo-cc.png){logo}
+
 :::
 
-::: info Entitat Educativa
-![Logo GVA](docs/.vitepress/public/img/logo-gva-negro.svg){.logo-anim}
-![Logo CC](docs/.vitepress/public/img/logo-cc.png){.logo-anim}
-![Logo Centro](docs/.vitepress/public/img/logo-centro.png){.logo-anim}
-:::
 
-::: tip Benvinguts al Curs
+::: info Benvinguts al Curs
 Aquest curs està dissenyat per introduir-vos als fonaments essencials de la programació. Aprendreu els conceptes bàsics, les metodologies i les eines necessàries per començar la vostra trajectòria en el món del desenvolupament de programari.
 :::
 
