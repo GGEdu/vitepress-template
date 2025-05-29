@@ -13,7 +13,7 @@ npm install
 ## Uso
 
 - Todo el contenido en formato Markdown debe estar en la carpeta `src/`.
-- Los menús de navegación y la configuración general del sitio se gestionan en la carpeta [`docs/.vitepress`](docs/.vitepress/), especialmente en el archivo [`config.ts`](docs/.vitepress/config.ts).
+- Los menús de navegación y la configuración general del sitio se gestionan en la carpeta [`src/.vitepress`](src/.vitepress/), especialmente en el archivo [`config.ts`](src/.vitepress/config.ts).
 - Para desarrollo local:
 
   ```bash
@@ -35,8 +35,8 @@ npm install
 ## Estructura recomendada
 
 - `src/` — Contiene todo el contenido en Markdown.
-- `docs/.vitepress/config.ts` — Configuración de VitePress y menús de navegación.
-- `docs/index.md` — Página principal de la documentación.
+- `src/.vitepress/config.ts` — Configuración de VitePress y menús de navegación.
+- `src/index.md` — Página principal.
 
 ## Despliegue en GitHub Actions
 
