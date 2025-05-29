@@ -6,7 +6,7 @@ export default ({
   lang: 'ca-ES',
   title: 'Títol del lloc',
   description: 'Descripció breu del lloc',
-  base: '/',
+  base: '/vitepress-template/',
   outDir: '../docs',
   markdown: {
     config(md) {
