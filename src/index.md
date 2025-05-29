@@ -54,7 +54,7 @@ const { theme, page, frontmatter } = useData()
 
 ## Imatge
 
-![Imatge de la dada edat guardada en memòria](logo.png)
+![Imatge de la dada edat guardada en memòria](img/logo.png)
 
 ---
 
