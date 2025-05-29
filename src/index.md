@@ -54,7 +54,7 @@ const { theme, page, frontmatter } = useData()
 
 ## Imatge
 
-![Imatge de la dada edat guardada en memòria](/uf1/4.1.png)
+![Imatge de la dada edat guardada en memòria](logo.png)
 
 ---
 
@@ -118,6 +118,7 @@ INICI
   5. Si no, escriure "És imparell"
 FI
 ```
+
 :::
 
 ---
