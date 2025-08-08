@@ -1,46 +1,51 @@
-# Plantilla d'exemple VitePress
+<!-- Eliminar el sidebar y debe quedar en la linea 1
+---
+sidebar: false
+---
+-->
+# Plantilla de ejemplo VitePress
 
-Benvingut! Aquesta pàgina és una plantilla de demostració que mostra la varietat d'elements que pots utilitzar en la teua documentació amb VitePress.
+¡Bienvenido! Esta página es una plantilla de demostración que muestra la variedad de elementos que puedes utilizar en tu documentación con VitePress.
 
 ---
 
-## Títols i seccions
+## Títulos y secciones
 
-# Títol nivell 1
+## Título nivel 1
 
-## Títol nivell 2
+## Título nivel 2
 
-### Títol nivell 3
-
----
-
-## Llistes
-
-- Element de llista
-- Un altre element
-  - Sub-element
-
-1. Element numerat
-2. Segon element
+### Título nivel 3
 
 ---
 
-## Taula
+## Listas
 
-| Nom          | Tipus        | Valor        |
+- Elemento de lista
+- Otro elemento
+  - Subelemento
+
+1. Elemento numerado
+2. Segundo elemento
+
+---
+
+## Tabla
+
+| Nombre       | Tipo         | Valor        |
 |--------------|--------------|-------------|
-| edat         | numèric      | 30          |
+| edad         | numérico     | 30          |
 | IVA          | numèric      | 0.21        |
-| DOMINI_GMAIL | alfanumèric  | "gmail.com" |
+| DOMINIO_GMAIL| alfanumérico | "gmail.com" |
 
 ---
 
-## Bloc de codi
+## Bloque de código
 
 ```plaintext
-- Nom de la dada: edat
-- Tipus de dada: numèric
-- Valor de la dada: 30
+- Nombre del dato: edad
+- Tipo de dato: numérico
+- Valor del dato: 30
 ```
 
 ```md
@@ -52,107 +57,66 @@ const { theme, page, frontmatter } = useData()
 
 ---
 
-## Imatge
+## Imagen
 
 ![Logo CC](/img/logo-cc.png){logo}
 
 ---
 
-## Bloc de cita
+## Bloque de cita
 
-> Exemple de cita: "Els programes són com receptes detallades que li diuen a l'ordinador exactament què fer."
+> Ejemplo de cita: "Los programas son como recetas detalladas que le dicen al ordenador exactamente qué hacer."
 
 ---
 
-## Bloc d'informació
+## Bloque de información
 
 ::: info
-Aquesta és una caixa d'informació.
+Esta es una caja de información.
 :::
 
 ::: tip
-Aquesta és una caixa de consell.
+Esta es una caja de consejo.
 :::
 
 ::: warning
-Aquesta és una caixa d'avís.
+Esta es una caja de aviso.
 :::
 
 ::: danger
-Aquesta és una caixa de perill.
+Esta es una caja de peligro.
 :::
 
 ---
 
-## Detalls expandibles
+## Detalles expandibles
 
-::: details Exemple de detalls
-Aquesta secció es pot expandir per mostrar més informació.
+::: details Ejemplo de detalles
+Esta sección se puede expandir para mostrar más información.
 :::
 
 ---
 
-## Tabs
+## Pestañas
 
-:::tabs
-@tab Algoritme A
 
-```plaintext
-INICI
-  1. Escriure "Introdueix valor per a n".
-  2. Llegir n.
-  3. Si n = 2 escriure "És parell"
-  4. Si no, si n = 1 escriure "És imparell"
-  5. Si no, n = n - 2 i tornem al pas 3.
-FI
-```
+::: tabs
+== Pestanya 1
 
-@tab Algoritme B
+Esta sección es para mostrar información relacionada con la pestaña 1.
 
-```plaintext
-INICI
-  1. Escriure "Introdueix valor per a n".
-  2. Llegir n.
-  3. M ← n % 2
-  4. Si M = 0, escriure "És parell"
-  5. Si no, escriure "És imparell"
-FI
-```
+== Pestanya 2
+
+Esta sección es para mostrar información relacionada con la pestaña 2.
 
 :::
 
 ---
 
-## Objectius (llista de fites)
+## Enlace a la documentación de la API
 
-- Comprendre el que és un algoritme.
-- Identificar i crear algoritmes en la vida real.
-- Conèixer el cicle de vida d'un programa.
-- Comprendre com es representen els algoritmes.
-- Conèixer els elements bàsics d'un algoritme i el seu significat.
-- Saber avaluar expressions i operadors.
+Consulta la [documentación de la API de VitePress](https://vitepress.dev/reference/runtime-api#usedata).
 
 ---
 
-## Exercicis (llista d'exemples)
-
-- Preparar un batut de fruites
-- Fer la compra al supermercat
-- Fer una pizza casolana
-- Llençar la brossa
-- Preparar un esmorzar
-- Instal·lar una aplicació al telèfon
-- Rentar la roba
-- Coure arròs
-- Llegir un llibre
-- Fer una trucada telefònica
-
----
-
-## Enllaç a la documentació de l'API
-
-Consulta la [documentació de l'API de VitePress](https://vitepress.dev/reference/runtime-api#usedata).
-
----
-
-Aquesta plantilla mostra la majoria d'elements que pots utilitzar en la teua documentació. Pots eliminar o modificar lliurement aquest contingut.
+Esta plantilla muestra la mayoría de elementos que puedes utilizar en tu documentación. Puedes eliminar o modificar libremente este contenido.

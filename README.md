@@ -1,6 +1,6 @@
 # vitepress-template
 
-Este proyecto utiliza [VitePress](https://vitepress.dev/) para documentación estática y está preparado para desplegarse automáticamente en GitHub Pages.
+Este proyecto utiliza [VitePress](https://vitepress.dev/) para documentación estática y está preparado para desplegarse automáticamente en GitHub Pages usando GitHub Actions.
 
 ## Instalación
 
@@ -13,7 +13,7 @@ npm install
 ## Uso
 
 - Todo el contenido en formato Markdown debe estar en la carpeta `src/`.
-- Los menús de navegación y la configuración general del sitio se gestionan en la carpeta [`src/.vitepress`](src/.vitepress/), especialmente en el archivo [`config.ts`](src/.vitepress/config.ts).
+- Los menús de navegación y la configuración general del sitio se gestionan en la carpeta [`src/.vitepress`](src/.vitepress/), especialmente en el archivo [`config.mts`](src/.vitepress/config.mts).
 - Para desarrollo local:
 
   ```bash
@@ -29,27 +29,36 @@ npm install
 - Para previsualizar la build de producción:
 
   ```bash
-  npm run serve
+  npm run preview
   ```
 
 ## Estructura recomendada
 
 - `src/` — Contiene todo el contenido en Markdown.
-- `src/.vitepress/config.ts` — Configuración de VitePress y menús de navegación.
+- `src/.vitepress/config.mts` — Configuración de VitePress y menús de navegación.
 - `src/index.md` — Página principal.
 
-## Despliegue en GitHub Actions
+## Configuración esencial en `src/.vitepress/config.mts`
 
-El despliegue de la documentación es automático y ocurre en la misma rama `main` del repositorio. El workflow definido en `.github/workflows/deploy.yml` construye la documentación y la sube a la carpeta `docs/` en la rama `main` cada vez que haces push a `main`.
+Antes de desplegar, revisa:
 
-### Permisos necesarios para el workflow
+- base: establece el nombre del repositorio entre barras. Es imprescindible para rutas correctas en GitHub Pages.
+  - Ejemplo: si tu repo es `MYUSER/MYREPO`, usa `base: '/MYREPO/'`.
+  - Si publicas en una página de usuario/organización (usuario.github.io) o con dominio propio, usa `base: '/'`.
+- outDir: por defecto genera en `../docs` (desde `src`). No es necesario comitear `docs/` si despliegas con GitHub Pages via artifact (recomendado).
+- Idiomas: locales.root (ES) y locales.ca (Català). La navegación (nav) se define por-locale para traducir textos.
+- Otros: siteTitle, logo, sidebar, footer.
 
-Para que el workflow pueda subir los cambios generados automáticamente, es necesario que el token de GitHub (`GITHUB_TOKEN`) tenga permisos de **lectura y escritura** sobre el repositorio. Para habilitar estos permisos:
+## Despliegue a GitHub Pages (rama separada gestionada por Pages)
 
-1. Ve a la configuración de la organización donde está tu repositorio en GitHub.
-2. Entra en `Settings` > `Actions` > `General`.
-3. Busca la sección **Workflow permissions**.
-4. Selecciona **Read and write permissions**.
-5. Guarda los cambios.
+Este repo usa un workflow que construye el sitio y publica el resultado en GitHub Pages mediante artifacts (sin comitear `docs/` en `main`).
 
-Con esto, el workflow podrá hacer commit y push de los archivos generados en la carpeta `docs/` tras cada build.
+Archivo: `.github/workflows/deploy.yml`
+
+- Build: `npx vitepress build src` genera `docs/`.
+- Publicación: `actions/upload-pages-artifact` sube `docs/` como artifact y `actions/deploy-pages` publica la web.
+
+Pasos para activar:
+
+1. En GitHub > Settings > Pages → “Build and deployment” → selecciona “GitHub Actions”.
+2. Haz push a `main`; el workflow construirá y desplegará.
