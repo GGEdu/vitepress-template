@@ -46,7 +46,7 @@ El despliegue de la documentación es automático y ocurre en la misma rama `mai
 
 Para que el workflow pueda subir los cambios generados automáticamente, es necesario que el token de GitHub (`GITHUB_TOKEN`) tenga permisos de **lectura y escritura** sobre el repositorio. Para habilitar estos permisos:
 
-1. Ve a la configuración del repositorio en GitHub.
+1. Ve a la configuración de la organización donde está tu repositorio en GitHub.
 2. Entra en `Settings` > `Actions` > `General`.
 3. Busca la sección **Workflow permissions**.
 4. Selecciona **Read and write permissions**.
