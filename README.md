@@ -62,3 +62,29 @@ Pasos para activar:
 
 1. En GitHub > Settings > Pages → “Build and deployment” → selecciona “GitHub Actions”.
 2. Haz push a `main`; el workflow construirá y desplegará.
+
+## Docker
+
+Arranca el proyecto dentro de contenedores sin instalar Node en tu máquina:
+
+- Desarrollo (VitePress dev server):
+
+  ```bash
+  docker compose up vitepress
+  ```
+
+  Accede en <http://localhost:5173>
+
+- Preview de producción (build + preview):
+
+  ```bash
+  docker compose --profile preview up preview
+  ```
+
+  Accede en <http://localhost:4173>
+
+Notas:
+
+- Los puertos 5173 (dev) y 24678 (HMR) deben estar libres.
+- El contenedor ejecuta `npm ci` al iniciar para asegurar dependencias limpias.
+- El volumen /app/node_modules evita que tu node_modules host sobrescriba el del contenedor.
