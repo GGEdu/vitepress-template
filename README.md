@@ -1,4 +1,4 @@
-# vitepress-template
+# Vitepress Template
 
 Este proyecto utiliza [VitePress](https://vitepress.dev/) para documentación estática y está preparado para desplegarse automáticamente en GitHub Pages usando GitHub Actions.
 
