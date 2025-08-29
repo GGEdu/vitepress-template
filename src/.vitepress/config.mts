@@ -11,9 +11,8 @@ export default defineConfig({
     }
   },
   head: [
-    // ['link', { rel: 'icon', type: 'image/png', href: '/img/logo.png' }],
+    ['link', { rel: 'icon', href: '/vitepress-template/img/logo.png' }]
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-    // ['link', { rel: 'stylesheet', href: '/UD1/.vitepress/theme/custom.css' }]
   ],
   // Metadatos por idioma (guía i18n)
   locales: {
