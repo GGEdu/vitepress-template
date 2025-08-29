@@ -57,7 +57,7 @@ export default defineConfig({
                 { text: "Pàgina d'inici", link: '/ca/' },
                 { text: 'Enllaç extern', link: '/' }
               ]
-            }
+            },
           ]
       }
     }
@@ -74,21 +74,24 @@ export default defineConfig({
         {
           text: 'Contenidos',
           items: [
-            { text: 'Introducción', link: '/' }
+            { text: 'Introducción', link: '/' },
           ]
-        }
+        },
+        { text: '<img src="/vitepress-template/img/logo-autor.png" alt="Autor" style="height:165px; margin: 0 auto; display:block;" />' },
       ],
       '/ca/': [
         {
           text: 'Continguts',
           items: [
-            { text: 'Introducció', link: '/ca/' }
+            { text: 'Introducció', link: '/ca/' },
           ]
-        }
+        },
+        { text: '<img src="/vitepress-template/img/logo-autor.png" alt="Autor" style="height:165px; margin: 0 auto; display:block;" />'},
+
       ]
     },
     footer: {
-      message: '<img src="/UD1/img/logo-autor.png" alt="Autor" style="height:75px; margin: 0 auto; display:block;" />',
+      message: '<img src="/vitepress-template/img/logo-autor.png" alt="Autor" style="height:75px; margin: 0 auto; display:block;" />',
       copyright: 'Copyright © 2025'
     }
   }
