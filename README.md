@@ -3,7 +3,8 @@
 Este proyecto utiliza [VitePress](https://vitepress.dev/) para documentación estática y está preparado para desplegarse automáticamente en GitHub Pages usando GitHub Actions.
 
 ## Demo de la plantilla preparada
-https://ggedu.github.io/vitepress-template/
+
+<https://ggedu.github.io/vitepress-template/>
 
 ## Instalación
 
